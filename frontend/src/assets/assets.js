@@ -123,7 +123,7 @@ export const food_list = [
         category: "Paper"
     },
     {
-        _id: "32",
+        _id: "109",
         name: "Computer Accessories",
         image: eWaste1,
         price: 15,
