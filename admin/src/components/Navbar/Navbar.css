@@ -1,0 +1,82 @@
+/* ========== Basic Page Styling ========== */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff; /* Light mode background */
+  color: #121212; /* Dark text for light mode */
+}
+
+/* ========== Navbar Container ========== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 4%;
+  background-color: #f6f6f6; /* Light gray navbar */
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* ========== Logo ========== */
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+/* ========== Profile Image ========== */
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* ========== Center Message ========== */
+.navbar-center {
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Welcome Heading */
+.navbar-center h2 {
+  font-size: 22px;
+  margin: 0;
+}
+
+/* Subtext */
+.navbar-center p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555; /* Slightly lighter text */
+}
+
+/* Colored Text */
+.profit {
+  color: #facc15; /* Yellow */
+  font-weight: bold;
+}
+
+.bin {
+  color: #4ade80; /* Green */
+  font-weight: bold;
+}
+
+/* ========== Responsive Design ========== */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    display: none; /* Hide on small screens */
+  }
+
+  .navbar-center h2 {
+    font-size: 18px;
+  }
+
+  .navbar-center p {
+    font-size: 12px;
+  }
+}

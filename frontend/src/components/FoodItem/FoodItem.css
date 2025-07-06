@@ -1,0 +1,126 @@
+.food-item {
+  width: 100%;
+  border-radius: 15px;
+  background-color: #f0fef2;
+  box-shadow: 0 0 12px rgba(0, 100, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.food-item:hover {
+  transform: scale(1.02);
+}
+
+.food-item-image {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  height: 180px;
+}
+
+.food-item-img-container {
+  position: relative;
+}
+
+.food-item-img-container .add {
+  width: 40px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  background-color: #2e7d32;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.food-item-counter {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: white;
+  padding: 6px 10px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.food-item-counter img {
+  width: 24px;
+  cursor: pointer;
+}
+
+.cartitemsp {
+  font-weight: 700;
+  font-size: 18px;
+  color: #2e7d32;
+}
+
+.food-item-info {
+  padding: 15px 20px;
+  background-color: #e7fbe9;
+  border-radius: 0 0 15px 15px;
+}
+
+.food-item-name-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.namewe {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1a4d1a;
+}
+
+.ratingstars {
+  width: 80px;
+}
+
+.food-item-desc {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #333333;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.food-item-price {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #2e7d32;
+}
+
+/* === DARK THEME === */
+:root .namewe,
+:root .cartitemsp,
+:root .food-item-price,
+:root .food-item-desc {
+  color: #ffffff;
+}
+
+:root .food-item-info,
+:root .food-item-counter {
+  background-color: #1c1c1c;
+}
+
+:root .food-item-img-container .add {
+  background-color: #000000;
+}
+
+/* === LIGHT THEME === */
+.lightcolors .namewe,
+.lightcolors .cartitemsp,
+.lightcolors .food-item-price,
+.lightcolors .food-item-desc {
+  color: #1a4d1a;
+}
+
+.lightcolors .food-item-info,
+.lightcolors .food-item-counter {
+  background-color: #ffffff;
+}
+
+.lightcolors .food-item-img-container .add {
+  background-color: #e8f5e9;
+}

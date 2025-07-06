@@ -1,0 +1,174 @@
+.app-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #14532d, #198754);
+    border-radius: 20px;
+    margin: 100px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Left Side (Admin Image) */
+.app-download-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-img {
+    width: 480px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Right Side */
+.app-download-right {
+    flex: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+/* 🚀 Waste Bot Section - Catchy & Important */
+.waste-bot-section {
+    background: linear-gradient(135deg, #1e3a34, #198754);
+    padding: 25px 30px;
+    border: 2px solid #00ff99;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 255, 153, 0.25);
+    animation: fadeInScale 0.6s ease-in-out;
+    transition: transform 0.3s ease;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.waste-bot-section h1 {
+    color: #ffffff;
+    font-size: max(1.8vw, 22px);
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.chatbot-button {
+    background: linear-gradient(90deg, #ffc107, #ff9900);
+    color: #1e1e1e;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chatbot-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 193, 7, 0.8);
+    animation: bounce 0.4s ease;
+}
+
+/* 💡 App Promotion Text */
+.pforbetter {
+    font-size: max(2vw, 20px);
+    font-weight: 600;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* 📱 Store Buttons Side-by-Side */
+.app-download-platforms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.app-download-platforms img {
+    width: max(22vw, 160px);
+    max-width: 200px;
+    transition: 0.4s ease;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.app-download-platforms img:hover {
+    transform: scale(1.05);
+}
+
+/* 🌙 Dark Mode Text Fix */
+:root .pforbetter {
+    color: white;
+}
+
+.lightcolors .pforbetter {
+    color: black;
+}
+
+/* 🔁 Animations */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.15); }
+    100% { transform: scale(1.1); }
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+    .app-download {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .admin-img {
+        width: 220px;
+        height: 150px;
+    }
+
+    .pforbetter {
+        font-size: 18px;
+    }
+
+    .waste-bot-section h1 {
+        font-size: 17px;
+    }
+
+    .chatbot-button {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    .app-download-platforms {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .app-download-platforms img {
+        width: 70%;
+    }
+}

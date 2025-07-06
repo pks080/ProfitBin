@@ -1,0 +1,40 @@
+.food-display {
+  margin-top: 50px;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #e1fbe3, #c5e9c7);
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 100, 0, 0.1);
+}
+
+.eco-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1b5e20;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  margin-bottom: 30px;
+}
+
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* DARK THEME */
+:root .eco-heading {
+  color: #e0ffe0;
+}
+
+:root .food-display {
+  background: linear-gradient(to bottom right, #263a29, #1e2d1b);
+}
+
+/* LIGHT THEME */
+.lightcolors .eco-heading {
+  color: #1b5e20;
+}
+
+.lightcolors .food-display {
+  background: linear-gradient(to bottom right, #e1fbe3, #c5e9c7);
+}

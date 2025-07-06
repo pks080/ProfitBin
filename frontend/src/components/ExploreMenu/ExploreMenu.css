@@ -1,0 +1,136 @@
+/* Container for the Explore Menu section */
+.explore-menu {
+  background: linear-gradient(135deg, #173f1f, #b2e5b2); /* soft green blend */
+  padding: 50px 30px;
+  border-radius: 20px;
+  margin: 40px 0;
+  box-shadow: 0 4px 25px rgba(0, 100, 0, 0.1);
+}
+
+/* Title above the menu */
+.explore-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1b5e20;
+  font-family: 'Segoe UI', sans-serif;
+  margin-bottom: 14px;
+}
+
+/* Subtitle below the title */
+.explore-subtext {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #0c310e;
+  max-width: 700px;
+  margin: 0 auto 35px auto;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+/* List holding all menu categories */
+.explore-menu-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0 auto;
+}
+
+/* Each individual menu item block */
+.explore-menu-item {
+  flex: 1 1 15%;
+  text-align: center;
+  max-width: 130px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Category image */
+.explore-menu-item img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 4px solid transparent;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Image on hover */
+.explore-menu-item img:hover {
+  transform: scale(1.07);
+}
+
+/* Image when selected */
+.explore-menu-item .active {
+  border: 5px solid #1b5e20;
+  box-shadow: 0 0 15px rgba(34, 139, 34, 0.5);
+}
+
+/* Label under each image - ENHANCED */
+.menu-label {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0d3c0d;
+  font-family: 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background-color: #062406;
+  padding: 8px 10px;
+  border-radius: 12px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+/* Divider at the bottom */
+.divider {
+  margin-top: 50px;
+  height: 2px;
+  background-color: #81c784;
+  border: none;
+}
+
+/* Dark/light theme handling */
+:root .explore-subtext,
+:root .menu-label,
+:root .explore-title {
+  color: white;
+}
+
+.lightcolors .explore-subtext,
+.lightcolors .menu-label,
+.lightcolors .explore-title {
+  color: #1b5e20;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .explore-menu-item {
+    flex: 1 1 30%;
+  }
+
+  .explore-title {
+    font-size: 2rem;
+  }
+
+  .explore-subtext {
+    font-size: 1.05rem;
+  }
+
+  .menu-label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .explore-menu-item {
+    flex: 1 1 45%;
+  }
+
+  .menu-label {
+    font-size: 0.95rem;
+  }
+}
