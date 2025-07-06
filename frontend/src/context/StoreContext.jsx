@@ -9,7 +9,7 @@ const StoreContextProvider = (props) => {
   const [token, setToken] = useState("");
   const [food_list, setFoodList] = useState([]);
 
-  const url = "https://profitbin-backend.onrender.com/"; // replace with your backend URL
+  const url = "https://profitbin-backend.onrender.com"; // replace with your backend URL
 
   const addToCart = async (itemId) => {
     if (!cartItems[itemId]) {
