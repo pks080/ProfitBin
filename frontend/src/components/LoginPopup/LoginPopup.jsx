@@ -46,7 +46,7 @@ const LoginPopup = ({ setShowLogin }) => {
         if (response.data.isAdmin) {
           toast.success("Welcome, Admin!");
           setTimeout(() => {
-            window.location.href = "https://extraordinary-lokum-2e3cfb.netlify.app/";
+            window.location.href = "https://profitbin-admin.onrender.com";
           }, 1500);
         } else {
           toast.success("Login successful!");
