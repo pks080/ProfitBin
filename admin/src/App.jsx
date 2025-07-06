@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
 
-  const url = "https://profitbin-backend.onrender.com/"
+  const url = "https://profitbin-backend.onrender.com"
 
   return (
     <div>
